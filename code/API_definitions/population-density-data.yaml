@@ -144,7 +144,7 @@ info:
 
     Population Density Data API ensures the usage of anonymized information and does not treat personal data as either input or output.
     Therefore, the access to Population Density Data API is defined as Client Credentials - 2-legged. Please refer to Identity and Consent Management (https://github.com/camaraproject/IdentityAndConsentManagement/) for the latest detailed specification of this authentication/authorization flow.
-    
+
     <!-- CAMARA:MANDATORY:additional-error-responses:BEGIN -->
     # Additional CAMARA error responses
 
