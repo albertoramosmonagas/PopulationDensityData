@@ -700,6 +700,7 @@ components:
                       - POPULATION_DENSITY_DATA.UNSUPPORTED_PRECISION
                       - POPULATION_DENSITY_DATA.UNSUPPORTED_SYNC_RESPONSE
                       - POPULATION_DENSITY_DATA.UNSUPPORTED_AREA_TYPE
+                      - PRIVATE_KEY_JWT_NOT_CONFIGURED
           examples:
             POPULATION_DENSITY_DATA_422_UNSUPPORTED_REQUEST:
               value:
