@@ -155,7 +155,7 @@ Feature: CAMARA Population Density Data API, vwip
     And the response header "Content-Type" is "application/json"
     And the response header "x-correlator" has same value as the request header "x-correlator"
     And the response includes property "$.operationId"
-    And there have been some problem processing the request asynchronously
+    And there has been a problem processing the request asynchronously
     And the request with the response body will be received at the address of the request property "$.sink" with property "$.operationId" equal to response property "$.operationId"
     And the request will have header "Authorization" set to "Bearer " + the value of the request property "$.sinkCredential.accessToken"
     And the request body complies with the OAS schema at "/components/schemas/PopulationDensityAsyncResponse"
@@ -270,7 +270,7 @@ Feature: CAMARA Population Density Data API, vwip
 
   @population_density_data_400.06_invalid_url
   Scenario: Invalid sink
-    Given the request body property "$.sink" is not set to an url
+    Given the request body property "$.sink" is not set to a URL
     When the request "retrievePopulationDensity" is sent
     Then the response status code is 400
     And the response header "x-correlator" has same value as the request header "x-correlator"
